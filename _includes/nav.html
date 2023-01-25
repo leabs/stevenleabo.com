@@ -1,7 +1,17 @@
 <div class="container">
   <nav>
     <ul>
-      <li><a href="{{site.url}}">Steven Leabo</a></li>
+      <li>
+        <strong>
+          {% if page.url == '/' %}
+          Steven Leabo
+          {% else %}
+          <a href="{{site.url}}">Steven Leabo</a>
+          {% endif %}
+        </strong>
+      </li>
+    </ul>
+    <ul>
       <li><a href="{{site.url}}/about">About</a></li>
       <li><a href="{{site.url}}/blog">Blog</a></li>
       <li><a href="{{site.url}}/fun">Fun</a></li>

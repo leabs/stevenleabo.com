@@ -3,20 +3,11 @@ body {
   padding: 0;
   font-family: Helvetica;
 }
-.container {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-.footer{
-  background:#f5f5f5;
-  padding:80px 60px;
+body>header, body>main {
+  padding-top:0;
 }
 .home-header {
-  padding:20px 60px;
+  padding:0px 10px;
   min-height: 500px;
   background-image: linear-gradient(
     50deg,
@@ -42,6 +33,10 @@ body {
     hsl(55deg 100% 50%) 100%
   );
 }
+.home-header > div{
+  max-width:1100px;
+  margin: 0 auto;
+}
 .home-header span,
 .home-header h1 {
   -webkit-user-select: none; /* Safari */
@@ -63,6 +58,10 @@ h1 {
   font-size: 3em;
   font-weight: 800;
   opacity: 0.75;
+}
+.home-header svg{
+  max-width:50px;
+  height:auto;
 }
 h2 {
   text-align: center;
@@ -102,19 +101,10 @@ h1 > span:hover {
 .text-center {
   text-align: center;
 }
-
-
-.featured-post,
-.contact{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  margin:10px;
-  background-color:#fff;
-  width:100%;
-  transition: all 0.3s ease-in-out;
+nav{
+  margin-bottom: -20px;
 }
+
 .featured-post > div,
 .contact > div{
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
