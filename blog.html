@@ -6,7 +6,7 @@ permalink: /blog/
 
 {% for posts in site.posts %}
 <article>
-    <img style="border: 1px solid #000;" src="{{site.url}}/assets/images/blog/{{posts.image}}" />
+    <a href="{{posts.url}}"><img style="border: 1px solid #000;" src="{{site.url}}/assets/images/blog/{{posts.image}}" /></a>
     <hgroup>
         <h2><a href="{{ posts.url }}">{{posts.title}}</a></h2>
         <h3>{{posts.date | date: "%D" }}</h3>
