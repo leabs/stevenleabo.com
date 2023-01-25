@@ -1,0 +1,22 @@
+<div class="featured-post">
+  <h2>Featured Post:</h2>
+
+  <!-- Show latest blog post-->
+  {% for post in site.posts limit:1 %}
+
+  <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; margin: 0 0 1rem 0;">
+    <div style="display: flex; flex-direction: row; align-items: center;">
+      <img src="{{site.url}}/{{post.image}}" alt="{{post.title}}" style="width: 100px; height: 100px; margin: 0 1rem 0 0;" />
+      <div>
+        <h2>{{post.title}}</h2>
+        <p>{{post.excerpt | strip_html}}</p>
+        <a href="{{post.url}}">Read More</a>
+      </div>
+    </div>
+   
+  {% endfor %}
+</div>
+<a href="{{site.url}}/blog">View All Posts</a>
+</div>
+
+
