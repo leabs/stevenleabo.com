@@ -1,0 +1,14 @@
+<h2>Contact Me:</h2>
+<div class="container contact">
+  <div class="card">
+    <input name="searchTxt" type="text" id="speechTxt" value="hey Steve, we want you to work for us" />
+    <button class="" onclick="speaks()">Speak</button>
+  </div>
+</div>
+
+<script>
+  function speaks() {
+    let input = document.getElementById("speechTxt").value;
+    window.speechSynthesis.speak(new SpeechSynthesisUtterance(input));
+  }
+</script>

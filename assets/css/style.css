@@ -11,6 +11,10 @@ body {
   max-width: 1100px;
   margin: 0 auto;
 }
+.footer{
+  background:#f5f5f5;
+  padding:80px 60px;
+}
 .home-header {
   padding:20px 60px;
   min-height: 500px;
@@ -98,23 +102,21 @@ h1 > span:hover {
 .text-center {
   text-align: center;
 }
-.card{
-  padding:30px;
-  display:flex;
-  flex-direction:column;
-}
 
-.featured-post{
+
+.featured-post,
+.contact{
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
   margin:10px;
   background-color:#fff;
-
+  width:100%;
   transition: all 0.3s ease-in-out;
 }
-.featured-post div{
+.featured-post > div,
+.contact > div{
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   padding:12px;
 }
@@ -132,46 +134,46 @@ h1 > span:hover {
 
 @keyframes flickerAnimation {
   0% {
-    opacity: 1;
+    opacity: .6;
   }
   50% {
     opacity: 0;
   }
   100% {
-    opacity: 1;
+    opacity: .6;
   }
 }
 @-o-keyframes flickerAnimation {
   0% {
-    opacity: 1;
+    opacity: .6;
   }
   50% {
     opacity: 0;
   }
   100% {
-    opacity: 1;
+    opacity: .6;
   }
 }
 @-moz-keyframes flickerAnimation {
   0% {
-    opacity: 1;
+    opacity: .6;
   }
   50% {
     opacity: 0;
   }
   100% {
-    opacity: 1;
+    opacity: .6;
   }
 }
 @-webkit-keyframes flickerAnimation {
   0% {
-    opacity: 1;
+    opacity: .6;
   }
   50% {
     opacity: 0;
   }
   100% {
-    opacity: 1;
+    opacity: .6;
   }
 }
 .animate-flicker {
