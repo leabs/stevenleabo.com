@@ -1,17 +1,67 @@
 <div class="container">
   <h2>Contact Me:</h2>
-  <article>
-    <form>
-    <input
-        name="searchTxt"
-        type="text"
-        id="speechTxt"
-        value="hey Steve, we want you to work for us"
-      />
-    <footer><button type="submit" class="" onclick="speaks()">Send!</button></footer>
-  </form>
-  </article>
+  <!-- Button to trigger the modal -->
+  <button
+    class="contrast"
+    data-target="modal-example"
+    onClick="toggleModal(event)"
+  >
+    Contact Me
+  </button>
 
+  <!-- Modal -->
+  <dialog id="modal-example">
+    <article>
+      <a
+        href="#close"
+        aria-label="Close"
+        class="close"
+        data-target="modal-example"
+        onClick="toggleModal(event)"
+      >
+      </a>
+      <div class="">
+        <h2>Want to Work Together?</h2>
+        <article>
+          <form>
+            <label for="name"
+              >E-mail
+              <input
+                type="text"
+                name="name"
+                placeholder="bob@aol.com"
+                required
+              />
+            </label>
+            <label for="message">
+              Message
+              <textarea
+                name="searchTxt"
+                type="text"
+                id="speechTxt"
+                value="hey Steve, we want you to work for us"
+              >
+hey Steve, we want you to work for us</textarea
+              >
+            </label>
+          </form>
+        </article>
+      </div>
+
+      <footer>
+        <button
+          type="submit"
+          style="background: lightslategrey;
+  }"
+          class=""
+          onclick="speaks()"
+        >
+          Preview Message
+        </button>
+        <button type="submit" class="">Send Message</button>
+      </footer>
+    </article>
+  </dialog>
 </div>
 
 <script>
@@ -20,9 +70,10 @@
     window.speechSynthesis.speak(new SpeechSynthesisUtterance(input));
     /*wait 1 seconds before sending*/
     setTimeout(readyToSend, 1000);
-
   }
-  function readyToSend(){
-    window.speechSynthesis.speak(new SpeechSynthesisUtterance('Ready to send your message?'));
+  function readyToSend() {
+    window.speechSynthesis.speak(
+      new SpeechSynthesisUtterance("Ready to send your message?")
+    );
   }
 </script>

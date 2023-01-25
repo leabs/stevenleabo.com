@@ -7,12 +7,15 @@
     <div>
       <article>
         <header>
-          <img src="{{site.url}}/{{post.image}}" alt="{{post.title}}" />
+          <img style="border:1px solid #000;" src="{{site.url}}/assets/images/blog/{{post.image}}" alt="{{post.title}}" />
         </header>
-        <h3>{{post.title}}</h3>
+        <hgroup>
+          <h2><a href="{{post.url}}">{{posts.title}}</a></h2>
+          <h3>{{posts.date | date: "%D" }}</h3>
+        </hgroup>
 
         <p>{{post.description | strip_html}}</p>
-        <footer><a href="{{post.url}}">Read More</a></footer>
+        <footer><a href="{{post.url}}">Read More...</a></footer>
       </article>
     </div>
 

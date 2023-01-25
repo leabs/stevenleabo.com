@@ -1,13 +1,18 @@
 ---
-layout: default
+layout: page
 title: Blog
 permalink: /blog/
 ---
 
-<h1>Blog Posts</h1>
-    
-    {% for post in site.posts %}
-    
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <p>{{ post.excerpt | strip_html }}</p>
-    {% endfor %}
+{% for posts in site.posts %}
+<article>
+    <header><img style="border: 1px solid #000;" src="{{site.url}}/assets/images/blog/{{posts.image}}" /></header>
+    <hgroup>
+        <h2><a href="{{ posts.url }}">{{posts.title}}</a></h2>
+        <h3>{{posts.date | date: "%D" }}</h3>
+      </hgroup>
+
+    <p>{{posts.description}}</p>
+    <footer><a href="{{posts.url}}">Read More...</a></footer>
+  </article>
+  {% endfor %}

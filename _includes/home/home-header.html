@@ -1,6 +1,5 @@
 <div class="home-header">
   <div>
-    <p class="popin animate-flicker">click</p>
     <h1>
       <span onclick="talk('hey')">Hey, </span><span> </span>
       <span onclick="talk('whatsup')">what's up</span> <span> </span>
@@ -13,44 +12,7 @@
       check out my projects here or on
       <a href="https://github.com/leabs" target="_blank">GitHub<img src="{{site.url}}/assets/images/external.png" width="32" height="32" style="padding-bottom:8px;"/></a>.
       <br />
-      <!-- Button to trigger the modal -->
-<button class="contrast"
-data-target="modal-example"
-onClick="toggleModal(event)">
-Contact Me
-</button>
 
-<!-- Modal -->
-<dialog id="modal-example">
-<article>
-  <a href="#close"
-    aria-label="Close"
-    class="close"
-    data-target="modal-example"
-    onClick="toggleModal(event)">
-  </a>
-  <div class="">
-    <h2>Contact Me:</h2>
-    <article>
-      <form>
-      <textarea
-          name="searchTxt"
-          type="text"
-          id="speechTxt"
-          value="hey Steve, we want you to work for us"
-        >hey Steve, we want you to work for us</textarea>
-     
-    </form>
-    </article>
-  
-  </div>
-  
-
-  <footer>
-    <button type="submit" class="" onclick="speaks()">Speak and Send!?</button>
-  </footer>
-</article>
-</dialog>
     </p>
   </div>
 </div>

@@ -4,13 +4,13 @@ description: "I coded a MagicMirror module called MMM-urbandictionary that displ
 date: "2023-01-23"
 tags: ['projects', 'open-source']
 featured: true
-image: "assets/images/blog/mirror.png"
+image: "mirror.png"
 layout: post
 ---
 
 <figure>
   <img
-    src="/blog/mmm-urbandictionary.webp"
+    src="{{site.url}}/assets/images/blog/mirror.png"
     alt="MagicMirror GUI running on my laptop during development."
   />
   <figcaption>
@@ -26,7 +26,7 @@ MagicMirror is a widely popular open source project that allows you to build a s
 
 <figure>
   <img
-    src="/blog/mirror.webp"
+    src="{{site.url}}/assets/images/blog/mirror2.png"
     alt="My MagicMirror on display."
   />
   <figcaption>
