@@ -1,13 +1,13 @@
 body {
   margin: 0;
   padding: 0;
-
 }
-body>header, body>main {
-  padding-top:0;
+body > header,
+body > main {
+  padding-top: 0;
 }
 .home-header {
-  padding:60px 10px;
+  padding: 60px 10px;
   background-image: linear-gradient(
     50deg,
     hsl(240deg 100% 20%) 0%,
@@ -32,8 +32,8 @@ body>header, body>main {
     hsl(55deg 100% 50%) 100%
   );
 }
-.home-header > div{
-  max-width:1100px;
+.home-header > div {
+  max-width: 1100px;
   margin: 0 auto;
 }
 .home-header span,
@@ -43,46 +43,35 @@ body>header, body>main {
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
 }
-h1 {
-  text-align: center;
-  margin-top: 100px;
-  font-size: 3em;
-  font-weight: 800;
-  opacity: 1;
-}
+
 .home-header h1 {
   text-align: center;
   margin-top: 0;
   color: #fff;
-  font-size: 3em;
+  font-size: 2.75em;
   font-weight: 800;
   opacity: 0.75;
 }
-.home-header svg{
-  max-width:50px;
-  height:auto;
+.home-header svg {
+  max-width: 50px;
+  height: auto;
 }
-h2 {
-  text-align: center;
-  margin-top: 100px;
-  font-size: 2.5em;
-  font-weight: 800;
-  opacity: 0.9;
-}
+
 h1.home-header span {
   margin-right: 0.1rem;
 }
-.home-header p{
+.home-header p {
   text-align: center;
   color: #fff;
-  font-size: 1.6em;
+  font-size: 1.3em;
   font-weight: 500;
   margin-top: 20px;
   opacity: 0.85;
   line-height: 2.2rem;
 }
-.home-header a{
-  color:yellow;
+.home-header a {
+  color: #111;
+  text-decoration: underline;
 }
 h1 > span:hover {
   opacity: 1;
@@ -94,24 +83,60 @@ h1 > span:hover {
 .text-center {
   text-align: center;
 }
-nav{
-  
+nav {
 }
 
 .featured-post > div,
-.contact > div{
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  padding:12px;
+.contact > div {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 12px;
 }
 
-.featured-post img{
-  max-width:100%;
+.featured-post img {
+  max-width: 100%;
   margin: 0 auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  margin-bottom:20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
-.featured-post img:hover{
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+.featured-post img:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+}
+
+#work {
+  padding: 60px 0;
+  background: linear-gradient(
+    180deg,
+    #fff 0%,
+    rgba(10, 53, 67, 0.25) 33%,
+    rgba(10, 53, 67, 0.25) 66%,
+    #fff 100%
+  );
+}
+.page-header {
+  padding: 60px 10px;
+  background-image: linear-gradient(
+    50deg,
+    hsl(240deg 100% 20%) 0%,
+    hsl(271deg 100% 21%) 0%,
+    hsl(288deg 100% 21%) 1%,
+    hsl(302deg 100% 22%) 3%,
+    hsl(313deg 100% 26%) 6%,
+    hsl(321deg 100% 31%) 9%,
+    hsl(327deg 100% 35%) 13%,
+    hsl(332deg 100% 38%) 18%,
+    hsl(336deg 100% 42%) 23%,
+    hsl(339deg 100% 44%) 29%,
+    hsl(351deg 86% 55%) 35%,
+    hsl(2deg 95% 61%) 42%,
+    hsl(11deg 100% 60%) 49%,
+    hsl(20deg 100% 58%) 57%,
+    hsl(28deg 100% 55%) 65%,
+    hsl(35deg 100% 51%) 72%,
+    hsl(41deg 100% 50%) 80%,
+    hsl(46deg 100% 50%) 87%,
+    hsl(50deg 100% 50%) 94%,
+    hsl(55deg 100% 50%) 100%
+  );
 }
 

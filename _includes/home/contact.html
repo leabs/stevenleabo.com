@@ -1,53 +1,37 @@
-<div class="container">
-  <h2>Contact Me:</h2>
-        <!-- Button to trigger the modal -->
-<button class="contrast"
-data-target="modal-example"
-onClick="toggleModal(event)">
-Contact Me
-</button>
-
-<!-- Modal -->
-<dialog id="modal-example">
-<article>
-  <a href="#close"
-    aria-label="Close"
-    class="close"
-    data-target="modal-example"
-    onClick="toggleModal(event)">
-  </a>
-  <div class="">
-    <h2>Want to Work Together?</h2>
-    
-      <form>
-        <label for="name">E-mail
-        <input type="text" name="name" placeholder="bob@aol.com" required />
-      </label>
-      <label for="message">
-        Message
-      <textarea
+<section aria-label="Contact Container">
+  <div class="container">
+    <article>
+      <hgroup>
+        <h2>Contact Me:</h2>
+        <h3>Can I help in creating a website or app for you?</h3>
+      </hgroup>
+      <form class="grid">
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="bob@aol.com"
+          aria-label="email"
+          required=""
+        />
+        <input
           name="searchTxt"
           type="text"
           id="speechTxt"
           value="hey Steve, we want you to work for us"
-        >hey Steve, we want you to work for us</textarea>
-      </label>
-     
-    </form>
-   
-  
+          required
+        ></input>
+        
+        
+      </form>
+      <div class="text-center" style="max-width:500px; margin: 0 auto;">
+        <button type="submit" role="button" onclick="speaks()" class="secondary">Preview</button>
+          <button type="submit" role="button">Send</button>
+        </div>
+      
+    </article>
   </div>
-  
-
-  <footer>
-    <button type="submit" style="background: #000; border-color: #000;
-  }" class="" onclick="speaks()">Preview Message</button>
-    <button type="submit" class="" >Send Message</button>
-  </footer>
-</article>
-</dialog>
-
-</div>
+</section>
 
 <script>
   function speaks() {
@@ -55,9 +39,10 @@ Contact Me
     window.speechSynthesis.speak(new SpeechSynthesisUtterance(input));
     /*wait 1 seconds before sending*/
     setTimeout(readyToSend, 1000);
-
   }
-  function readyToSend(){
-    window.speechSynthesis.speak(new SpeechSynthesisUtterance('Ready to send your message?'));
+  function readyToSend() {
+    window.speechSynthesis.speak(
+      new SpeechSynthesisUtterance("Ready to send your message?")
+    );
   }
 </script>

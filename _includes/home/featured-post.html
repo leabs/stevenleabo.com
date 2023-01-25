@@ -1,19 +1,24 @@
-<div class="container">
-  <h2>Featured Posts:</h2>
+<section>
+<div class="container" style="padding-top:60px;">
+  <hgroup>
+    <h2>Featured Posts:</h2>
+    <h3>Some thoughts about Web Development or life.</h3>
+  </hgroup>
   <div class="grid">
     <!-- Show latest blog post-->
-    {% for post in site.posts limit:2 %}
+    {% for post in site.posts limit:3 %}
 
     <div>
-      <article>
-        <a href="{{ post.url }}"><img style="border:1px solid #000;" src="{{site.url}}/assets/images/blog/{{post.image}}" alt="{{post.title}}" /></a>
+      <article style="margin-top:0">
+        <a href="{{ post.url }}"><img style="margin-bottom: 12px; border:1px solid #000;" src="{{site.url}}/assets/images/blog/{{post.image}}" alt="{{post.title}}" /></a>
         <hgroup>
-          <h2 style="font-size:2rem;"><a href="{{post.url}}">{{post.title}}</a></h2>
+          <h2 style="font-size:1.3rem;"><a href="{{post.url}}">{{post.title}}</a></h2>
           <h3>{{posts.date | date: "%D" }}</h3>
         </hgroup>
 
         <p>{{post.description | strip_html}}</p>
-        <footer><a href="{{post.url}}">Read More...</a></footer>
+       
+        
       </article>
     </div>
 
@@ -23,3 +28,4 @@
     <a href="{{site.url}}/blog" role="button">View All Posts</a>
   </div>
 </div>
+</section>
