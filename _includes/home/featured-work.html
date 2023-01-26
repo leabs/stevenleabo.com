@@ -5,26 +5,20 @@
       <h3>I love building things</h3>
     </hgroup>
     <div class="grid">
-      <!-- Show latest blog post-->
-      {% for post in site.posts limit:3 %}
-  
-      <div>
-        <article style="margin-top:0">
-          <a href="{{ post.url }}"><img style="margin-bottom: 12px; border:1px solid #000;" src="{{site.url}}/assets/images/blog/{{post.image}}" alt="{{post.title}}" /></a>
-          <hgroup>
-            <h2 style="font-size:1.3rem;"><a href="{{post.url}}">{{post.title}}</a></h2>
-            <h3>{{posts.date | date: "%D" }}</h3>
-          </hgroup>
-  
-          <p>{{post.description | strip_html}}</p>
-      
-        </article>
+      <div style="margin:10px;">
+        <img src="{{site.url}}/assets/images/blog/mirror.png" alt="" />
       </div>
-  
-      {% endfor %}
+      <div style="margin:10px;">
+        <img src="{{site.url}}/assets/images/blog/mirror.png" alt="" />
+      </div>
     </div>
-    <div class="text-center">
-      <a href="{{site.url}}/work" role="button">View All Work</a>
-    </div>
+    <div class="grid">
+        <div style="margin:10px;">
+          <img src="{{site.url}}/assets/images/blog/mirror.png" alt="" />
+        </div>
+        <div style="margin:10px;">
+          <img src="{{site.url}}/assets/images/blog/mirror.png" alt="" />
+        </div>
+      </div>
   </div>
 </section>

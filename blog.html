@@ -2,10 +2,12 @@
 layout: page
 title: Blog
 permalink: /blog/
-subtitle: Some thoughts.
+subtitle: Some of my thoughts on web development or life in general.
 ---
 
+<div class="row"></div>
 {% for posts in site.posts %}
+<div class="col-md-4">
 <article>
     <a href="{{posts.url}}"><img style="border: 1px solid #000;" src="{{site.url}}/assets/images/blog/{{posts.image}}" /></a>
     <hgroup>
@@ -16,4 +18,6 @@ subtitle: Some thoughts.
     <p>{{posts.description}}</p>
     <a href="{{posts.url}}">Read More...</a>
   </article>
+</div>
   {% endfor %}
+</div>
