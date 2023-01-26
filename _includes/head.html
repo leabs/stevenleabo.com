@@ -3,7 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="{{site.description}}" />
-  <title>{{site.title}}  {{ page.title }}</title>
+  <title>{{site.title}} {{ page.title }}</title>
   <link rel="stylesheet" href="{{site.url}}/assets/css/pico.min.css" />
   <link rel="stylesheet" href="{{site.url}}/assets/css/style.css" />
 
@@ -15,45 +15,55 @@
   {% endif %}
   <script>
     /*Making event listeners passive to improve scrolling performance*/
-    document.addEventListener('touchstart', onTouchStart, {passive: true});
-    </script>
+    addEventListener(
+      document,
+      "touchstart",
+      function (e) {
+        console.log(e.defaultPrevented); // will be false
+        e.preventDefault(); // does nothing since the listener is passive
+        console.log(e.defaultPrevented); // still false
+      },
+      Modernizr.passiveeventlisteners ? { passive: true } : false
+    );
+  </script>
 
   <style>
     :root {
-      --primary: #fb8c00;
-      --border-radius: 0;
+      --primary: #00acc1;
+      --muted-color: hsl(205deg, 10%, 80%);
     }
-    /* Orange Light scheme (Default) */
+    /* Cyan Light scheme (Default) */
     /* Can be forced with data-theme="light" */
     [data-theme="light"],
     :root:not([data-theme="dark"]) {
-      --primary: #fb8c00;
-      --primary-hover: #f57c00;
-      --primary-focus: rgba(251, 140, 0, 0.125);
+      --primary: #00acc1;
+      --primary-hover: #0097a7;
+      --primary-focus: rgba(0, 172, 193, 0.125);
       --primary-inverse: #fff;
     }
 
-    /* Orange Dark scheme (Auto) */
+    /* Cyan Dark scheme (Auto) */
     /* Automatically enabled if user has Dark mode enabled */
     @media only screen and (prefers-color-scheme: dark) {
       :root:not([data-theme="light"]) {
-        --primary: #fb8c00;
-        --primary-hover: #ff9800;
-        --primary-focus: rgba(251, 140, 0, 0.25);
+        --primary: #00acc1;
+        --primary-hover: #00bcd4;
+        --primary-focus: rgba(0, 172, 193, 0.25);
         --primary-inverse: #fff;
       }
     }
 
-    /* Orange Dark scheme (Forced) */
+    /* Cyan Dark scheme (Forced) */
     /* Enabled if forced with data-theme="dark" */
     [data-theme="dark"] {
-      --primary: #fb8c00;
-      --primary-hover: #ff9800;
-      --primary-focus: rgba(251, 140, 0, 0.25);
+      --primary: #00acc1;
+      --primary-hover: #00bcd4;
+      --primary-focus: rgba(0, 172, 193, 0.25);
       --primary-inverse: #fff;
+      --muted-color: hsl(205deg, 10%, 80%) !important;
     }
 
-    /* Orange (Common styles) */
+    /* Cyan (Common styles) */
     :root {
       --form-element-active-border-color: var(--primary);
       --form-element-focus-color: var(--primary-focus);
