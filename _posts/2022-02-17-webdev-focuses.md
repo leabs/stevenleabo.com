@@ -1,6 +1,6 @@
 ---
 title: "Focuses For Web Developers"
-description: "Collection of topics that are important to webdevs"
+description: "Collection of topics that are important to webdevs."
 date: "2022-02-17"
 tags: ['web-development']
 layout: post

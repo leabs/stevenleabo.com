@@ -1,11 +1,10 @@
 ---
 layout: default
 ---
-
+{% include blog/blog-header.html %}
 <div class="container">
   {% include breadcrumbs.html %}
 
-  <h1>{{ page.title }}</h1>
-  <div>{{content}}</div>
+  <article>{{content}}</article>
 </div>
 

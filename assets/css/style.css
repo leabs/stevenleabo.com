@@ -7,7 +7,6 @@ body > main {
   padding-top: 0;
 }
 .home-header {
-  padding: 60px 10px;
   background-image: linear-gradient(
     50deg,
     hsl(240deg 100% 20%) 0%,
@@ -32,10 +31,27 @@ body > main {
     hsl(55deg 100% 50%) 100%
   );
 }
-.home-header > div {
-  max-width: 1100px;
-  margin: 0 auto;
+.page-header {
+  background-image: linear-gradient(
+    171.8deg,
+    rgba(5, 111, 146, 1) 13.5%,
+    rgba(6, 57, 84, 1) 78.6%
+  );
 }
+.blog-header {
+  background-image: linear-gradient(
+    111.1deg,
+    rgba(0, 40, 70, 1) -4.8%,
+    rgba(255, 115, 115, 1) 82.7%,
+    rgba(255, 175, 123, 1) 97.2%
+  );
+}
+.home-header,
+.page-header,
+.blog-header {
+  padding: 80px 10px;
+}
+
 .home-header span,
 .home-header h1 {
   -webkit-user-select: none; /* Safari */
@@ -44,30 +60,31 @@ body > main {
   user-select: none; /* Standard */
 }
 
-.home-header h1 {
+.home-header h1,
+.blog-header h1,
+.page-header h1 {
   text-align: center;
   margin-top: 0;
   color: #fff;
-  font-size: 2.75em;
-  font-weight: 800;
+  font-weight: 700;
   opacity: 0.75;
+  margin-bottom:2rem;
+  font-size:2.5rem;
 }
 .home-header svg {
   max-width: 50px;
   height: auto;
 }
 
-h1.home-header span {
-  margin-right: 0.1rem;
-}
-.home-header p {
+.home-header p,
+.page-header p,
+.blog-header p {
   text-align: center;
   color: #fff;
-  font-size: 1.3em;
-  font-weight: 500;
-  margin-top: 20px;
-  opacity: 0.85;
-  line-height: 2.2rem;
+  opacity: 0.7;
+  max-width:90%;
+  margin: 0 auto;
+  font-size:1.2rem !important;
 }
 .home-header a {
   color: #111;
@@ -75,7 +92,7 @@ h1.home-header span {
 }
 .home-header a:hover {
   color: #fff;
-  text-decoration:wavy underline;
+  text-decoration: wavy underline;
 }
 h1 > span:hover {
   opacity: 1;
@@ -86,8 +103,6 @@ h1 > span:hover {
 
 .text-center {
   text-align: center;
-}
-nav {
 }
 
 .featured-post > div,
@@ -107,7 +122,8 @@ nav {
   cursor: pointer;
 }
 
-#blog, #games {
+#blog,
+#games {
   padding: 60px 0;
   background: linear-gradient(
     180deg,
@@ -115,32 +131,6 @@ nav {
     rgba(10, 53, 167, 0.25) 33%,
     rgba(10, 53, 167, 0.25) 46%,
     #fff 100%
-  );
-}
-.page-header {
-  padding: 60px 10px;
-  background-image: linear-gradient(
-    50deg,
-    hsl(240deg 100% 20%) 0%,
-    hsl(271deg 100% 21%) 0%,
-    hsl(288deg 100% 21%) 1%,
-    hsl(302deg 100% 22%) 3%,
-    hsl(313deg 100% 26%) 6%,
-    hsl(321deg 100% 31%) 9%,
-    hsl(327deg 100% 35%) 13%,
-    hsl(332deg 100% 38%) 18%,
-    hsl(336deg 100% 42%) 23%,
-    hsl(339deg 100% 44%) 29%,
-    hsl(351deg 86% 55%) 35%,
-    hsl(2deg 95% 61%) 42%,
-    hsl(11deg 100% 60%) 49%,
-    hsl(20deg 100% 58%) 57%,
-    hsl(28deg 100% 55%) 65%,
-    hsl(35deg 100% 51%) 72%,
-    hsl(41deg 100% 50%) 80%,
-    hsl(46deg 100% 50%) 87%,
-    hsl(50deg 100% 50%) 94%,
-    hsl(55deg 100% 50%) 100%
   );
 }
 

@@ -5,19 +5,16 @@ permalink: /blog/
 subtitle: Some of my thoughts on web development or life in general.
 ---
 
-<div class="row"></div>
-{% for posts in site.posts %}
-<div class="col-md-4">
-<article>
-    <a href="{{posts.url}}"><img style="border: 1px solid #000;" src="{{site.url}}/assets/images/blog/{{posts.image}}" /></a>
-    <hgroup>
-        <h2><a href="{{ posts.url }}">{{posts.title}}</a></h2>
-        <h3>{{posts.date | date: "%D" }}</h3>
-      </hgroup>
-
-    <p>{{posts.description}}</p>
-    <a href="{{posts.url}}">Read More...</a>
-  </article>
-</div>
+<div>
+  {% for post in site.posts %}
+  <div class="grid">
+    <article style="margin-bottom:0; padding:30px 20px;">
+      <div class="">
+        <h2 style="font-size:1.5rem; margin-bottom:12px;"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+        <p>{{post.date | date: "%D" }}</p>
+        <p>{{post.description | strip_html}}</p>
+      </div>
+    </article>
+  </div>
   {% endfor %}
 </div>
