@@ -26,7 +26,7 @@ MagicMirror is a widely popular open source project that allows you to build a s
 
 <figure>
   <img
-    src="{{site.url}}/assets/images/blog/mirror2.png"
+    src="{{site.url}}/assets/images/blog/mirror2.PNG"
     alt="My MagicMirror on display."
   />
   <figcaption>
