@@ -127,8 +127,8 @@ h1 > span:hover {
   background: linear-gradient(
     180deg,
     #11191f 0%,
-    rgba(251, 140, 0, 0.15) 33%,
-    rgba(251, 140, 0, 0.15) 46%,
+    hsl(195deg, 85%, 21%) 33%,
+    hsl(195deg, 85%, 21%) 46%,
     #11191f 100%
   );
 }
