@@ -2,16 +2,41 @@
   <div class="container" style="padding-top: 60px">
     <hgroup>
       <h2>About Me:</h2>
-      <h3>Love webdev, etc</h3>
+      <h3>A little more about me.</h3>
     </hgroup>
-    <div class="grid">
-      <div class="">
-        <p>Some content here too</p>
-      </div>
-      <div class="">
-        <p>Some content here too</p>
-      </div>
-      <div></div>
-    </div>
+    <article style="margin-top: 0">
+      <p>
+        I've been doing Frontend Web Development professionally for
+        <span id="years"></span> years. I work with anyone from start-ups to
+        larger companies. My strengths are styling, building layouts and
+        components from designs, and being a team player! I love helping people
+        reach their goals. Get in touch if you think I can help your business.
+      </p>
+      <details>
+        <summary>Some technologies I use often (click to expand):</summary>
+        <ul>
+          <li>HTML/CSS/JS</li>
+          <li>SCSS/SASS</li>
+          <li>Jekyll, NextJS, Gatsby, Hugo (Static Site Generators)</li>
+          <li>React</li>
+          <li>Wordpress (supporting established themes or building custom themes</li>
+          <li>API data fetching</li>
+          <li>Git/GitHub</li>
+          <li>Adobe Suite (Photoshop user for decades)</li>
+          <li>Content Creation with Logic Pro, Final Cut Pro</li>
+          <li>Staying current with new trends and technologies in the Frontend space</li>
+          <li>Much more!</li>
+        </ul>
+      </details>
+    </article>
   </div>
 </section>
+
+<script>
+  //Display number of years since 2017 in span with the ID "years"
+  var d = new Date();
+  var n = d.getFullYear();
+  var years = n - 2017;
+  console.log(years)
+  document.getElementById("years").innerHTML = years;
+</script>
