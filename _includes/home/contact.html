@@ -1,56 +1,44 @@
 <section aria-label="Contact Container">
   <div class="container">
-    <article>
-      <hgroup>
-        <h2>Contact Me:</h2>
-        <h3>Can I help in creating a website or app for you?</h3>
-      </hgroup>
-      <form class="grid">
-        <label for="email">Email:
-        <input
-          type="text"
-          id="email"
-          name="email"
-          placeholder="bob@aol.com"
-          aria-label="email"
-          required=""
-        />
-      </label>
-      <label for="speechTxt">Message:
-        <input
-          name="searchTxt"
-          type="text"
-          id="speechTxt"
-          value="hey Steve, we want you to work for us"
-          required
-        ></input>
-        </label>
-        
-        
-      </form>
-      <div class="text-center" style="max-width:500px; margin: 0 auto;">
-        <button type="submit" role="button" onclick="speaks()" class="secondary">Preview</button>
-          <button type="submit" role="button">Send</button>
+    <article style="max-width:600px; margin:0 auto;">
+      <div>
+        <hgroup>
+          <h2>Contact Me:</h2>
+          <h3>Can I help in creating a website or app for you?</h3>
+        </hgroup>
+        <form class="">
+          <label for="email">Email:
+            <input type="text" id="email" name="email" placeholder="bob@aol.com" aria-label="email" required="" />
+          </label>
+          <label for="speechTxt">Message:
+            <input name="searchTxt" type="text" id="speechTxt" value="hey Steve, we want you to work for us"
+              required></input>
+          </label>
+
+
+        </form>
+        <div>
+          <button type="submit" role="button" onclick="speaks()" class="secondary">Preview Message</button>
+          <button type="submit" role="button">Send it!</button>
         </div>
-      
+      </div>
     </article>
   </div>
-  
-</article>
-</dialog>
+  </article>
+  </dialog>
 
-</div>
+  </div>
 
-<script>
-  function speaks() {
-    let input = document.getElementById("speechTxt").value;
-    window.speechSynthesis.speak(new SpeechSynthesisUtterance(input));
-    /*wait 1 seconds before sending*/
-    setTimeout(readyToSend, 1000);
-  }
-  function readyToSend() {
-    window.speechSynthesis.speak(
-      new SpeechSynthesisUtterance("Ready to send your message?")
-    );
-  }
-</script>
+  <script>
+    function speaks() {
+      let input = document.getElementById("speechTxt").value;
+      window.speechSynthesis.speak(new SpeechSynthesisUtterance(input));
+      /*wait 1 seconds before sending*/
+      setTimeout(readyToSend, 1000);
+    }
+    function readyToSend() {
+      window.speechSynthesis.speak(
+        new SpeechSynthesisUtterance("Ready to send your message?")
+      );
+    }
+  </script>
