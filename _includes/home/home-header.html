@@ -8,25 +8,10 @@
     </h1>
     <p class="text-center">
       I'm a Frontend Web Developer from Syracuse, NY who likes to build cool
-      stuff. Reach out if you're interested in working together or
-      check out my projects here or on
+      stuff. Reach out if you're interested in working together or check out my
+      projects here or on
       <a href="https://github.com/leabs" target="_blank">GitHub</a>.
       <br />
-
     </p>
   </div>
 </div>
-
-
-<script>
-  function speaks() {
-    let input = document.getElementById("speechTxt").value;
-    window.speechSynthesis.speak(new SpeechSynthesisUtterance(input));
-    /*wait 1 seconds before sending*/
-    setTimeout(readyToSend, 1000);
-
-  }
-  function readyToSend(){
-    window.speechSynthesis.speak(new SpeechSynthesisUtterance('Ready to send your message?'));
-  }
-</script>
