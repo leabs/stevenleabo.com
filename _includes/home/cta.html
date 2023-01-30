@@ -1,11 +1,25 @@
-<section class="cta">
+<section class="cta" id="cta">
 <div class="container text-center">
     <hgroup>
         <h2>Let's Work Together</h2>
         <h3>I'm available for freelance work.</h3>
     </hgroup>
     <div class="text-center">
-        <a href="mailto:{{site.email}}" role="button" class="contrast">Contact Me</a>
+        <a href="mailto:{{site.email}}" role="button" class="secondary">Contact Me</a>
     </div>
 </div>
 </section>
+
+<script>
+    VANTA.WAVES({
+      el: "#cta",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x92946
+    })
+    </script>

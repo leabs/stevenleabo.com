@@ -1,4 +1,4 @@
-<div class="home-header">
+<div class="home-header" id="home-header">
   <div>
     <h1>
       <span onclick="talk('hey')">Hey, </span><span> </span>
@@ -15,3 +15,16 @@
     </p>
   </div>
 </div>
+<script>
+VANTA.WAVES({
+  el: "#home-header",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x92946
+})
+</script>

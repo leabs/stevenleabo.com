@@ -8,29 +8,7 @@ body > main {
 }
 .home-header,
 .cta {
-  background-image: linear-gradient(
-    50deg,
-    hsl(240deg 100% 20%) 0%,
-    hsl(271deg 100% 21%) 0%,
-    hsl(288deg 100% 21%) 1%,
-    hsl(302deg 100% 22%) 3%,
-    hsl(313deg 100% 26%) 6%,
-    hsl(321deg 100% 31%) 9%,
-    hsl(327deg 100% 35%) 13%,
-    hsl(332deg 100% 38%) 18%,
-    hsl(336deg 100% 42%) 23%,
-    hsl(339deg 100% 44%) 29%,
-    hsl(351deg 86% 55%) 35%,
-    hsl(2deg 95% 61%) 42%,
-    hsl(11deg 100% 60%) 49%,
-    hsl(20deg 100% 58%) 57%,
-    hsl(28deg 100% 55%) 65%,
-    hsl(35deg 100% 51%) 72%,
-    hsl(41deg 100% 50%) 80%,
-    hsl(46deg 100% 50%) 87%,
-    hsl(50deg 100% 50%) 94%,
-    hsl(55deg 100% 50%) 100%
-  );
+  background:var(--primary);
 }
 .page-header {
   background-image: linear-gradient(
@@ -68,7 +46,7 @@ body > main {
   margin-top: 0;
   color: #fff;
   font-weight: 700;
-  opacity: 0.75;
+  opacity: 0.85;
   margin-bottom: 2rem;
   font-size: 2.5rem;
 }
@@ -82,13 +60,13 @@ body > main {
 .blog-header p {
   text-align: center;
   color: #fff;
-  opacity: 0.7;
+  opacity: 0.8;
   max-width: 1000px;
   margin: 0 auto;
   font-size: 1.2rem !important;
 }
 .home-header a {
-  color: #111;
+  color: #fff;
   text-decoration: underline;
 }
 .home-header a:hover {
