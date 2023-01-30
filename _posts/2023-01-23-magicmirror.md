@@ -5,6 +5,7 @@ date: "2023-01-23"
 tags: ['projects', 'open-source']
 featured: true
 image: "mirror.png"
+imagethumb: "mirror-thumb.webp"
 layout: post
 ---
 

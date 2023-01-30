@@ -5,6 +5,7 @@ date: "2022-03-19"
 tags: ['web-development','open-source', 'jekyll']
 layout: post
 image: "leet-code.png"
+imagethumb: "leet-code-thumb.webp"
 ---
 
 There is something so rewarding about trying to build a project using the least amount of resources possible.
