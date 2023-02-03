@@ -111,7 +111,9 @@ h1 > span:hover {
     #fff 100%
   );
 } */
-
+#videos h3{
+  margin-bottom:30px;
+}
 h1 {
   line-height: 3rem;
 }
