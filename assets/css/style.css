@@ -8,7 +8,7 @@ body > main {
 }
 .home-header,
 .cta {
-  background:var(--primary);
+  background: var(--primary);
 }
 .page-header {
   background-image: linear-gradient(
@@ -112,88 +112,32 @@ h1 > span:hover {
   );
 } */
 
-h1{
+h1 {
   line-height: 3rem;
 }
 
-/* Floppy drive css */
+.breadcrumbs {
+  padding: 0 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-.floppy .contain {
-  max-width: 1200px;
-  min-width: 600px;
-  width: 50%;
-  height: 520px;
-  background: #333;
-  margin: auto;
-  border-radius: 15px 15px 0 0;
-}
-.floppy .hole {
-  width: 30px;
-  height: 10px;
-  background: #fff;
-  position: relative;
-  right: -555px;
-  top: -310px;
-}
-.banner {
-  width: 80%;
-  margin: auto;
-  background: #444;
-  height: 350px;
-  background: lightgreen;
-}
-.floppy .stripe {
-  position: relative;
-  height: 50px;
-  background: #fff;
-}
-.floppy .greenstripe {
-  position: relative;
-  height: 50px;
-  background: lightgreen;
-}
-.floppy .metalLeft {
-  height: 160px;
-  width: 70px;
-  background: #ccc;
-  position: relative;
-  left: 130px;
-}
-.floppy .metalTop {
-  height: 20px;
-  width: 80px;
-  background: #ccc;
-  position: relative;
-  left: 200px;
-  top: -160px;
-}
-.floppy .metalBottom {
-  height: 20px;
-  width: 80px;
-  background: #ccc;
-  position: relative;
-  left: 200px;
-  top: -40px;
-}
-.floppy .metalRight {
-  height: 160px;
-  width: 170px;
-  background: #ccc;
-  position: relative;
-  left: 280px;
-  top: -200px;
-  z-index: 99;
-}
-.floppy .text {
-  font-family: Helvetica;
-  text-align: center;
-  padding-top: 30px;
-}
-.cta{
-  color:#fff;
+.cta {
+  color: #fff;
   padding: 40px;
 }
 .cta hgroup h2,
-.cta hgroup h3{
-  color:#fff;
+.cta hgroup h3 {
+  color: #fff;
+}
+
+/*Adjust padding on smaller screens */
+@media screen and (max-width: 600px) {
+  .breadcrumbs {
+    padding: 0 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+  }
 }

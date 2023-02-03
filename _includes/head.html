@@ -6,43 +6,43 @@
   <title>{{site.title}} {{ page.title }}</title>
   <link rel="stylesheet" href="{{site.url}}/assets/css/pico.min.css" />
   <link rel="stylesheet" href="{{site.url}}/assets/css/style.css" />
-
+  <script src="{{site.url}}/assets/js/home-header.js"></script>
   <!--If homepage load home-header.js-->
   {% if page.url == '/' %}
-  <script src="{{site.url}}/assets/js/home-header.js"></script>
+
   <script src="{{site.url}}/assets/js/contact.js"></script>
   {% endif %}
 
   <style>
-       /* Blue Light scheme (Default) */
+    /* Blue Light scheme (Default) */
     /* Can be forced with data-theme="light" */
     [data-theme="light"],
     :root:not([data-theme="dark"]) {
-      --primary: #186CB7;
+      --primary: #186cb7;
       --primary-hover: #1976d2;
       --primary-focus: rgba(30, 136, 229, 0.125);
-      --primary-inverse: #FFF;
-      --muted-color: rgba(0,0,0,0.75);
+      --primary-inverse: #fff;
+      --muted-color: rgba(0, 0, 0, 0.75);
     }
 
     /* Blue Dark scheme (Auto) */
     /* Automatically enabled if user has Dark mode enabled */
     @media only screen and (prefers-color-scheme: dark) {
       :root:not([data-theme]) {
-        --primary: #186CB7;
+        --primary: #186cb7;
         --primary-hover: #2196f3;
         --primary-focus: rgba(30, 136, 229, 0.25);
-        --primary-inverse: #FFF;
+        --primary-inverse: #fff;
       }
     }
 
     /* Blue Dark scheme (Forced) */
     /* Enabled if forced with data-theme="dark" */
     [data-theme="dark"] {
-      --primary: #186CB7;
+      --primary: #186cb7;
       --primary-hover: #2196f3;
       --primary-focus: rgba(30, 136, 229, 0.25);
-      --primary-inverse: #FFF;
+      --primary-inverse: #fff;
     }
 
     /* Blue (Common styles) */
@@ -52,24 +52,8 @@
       --switch-color: var(--primary-inverse);
       --switch-checked-background-color: var(--primary);
     }
-    /*Fade in */
-
-    body {
-        animation: fadeInAnimation ease 1s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-    }
-
-    @keyframes fadeInAnimation {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-         }
-    }
   </style>
 
-  <script src="../assets/js/three.r134.min.js"></script>
-  <script src="../assets/js/vanta.waves.min.js"></script>
+  <script src="{{site.url}}/assets/js/three.r134.min.js"></script>
+  <script src="{{site.url}}/assets/js/vanta.waves.min.js"></script>
 </head>
