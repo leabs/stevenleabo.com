@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="{{site.description}}" />
   <title>{{site.title}} {{ page.title }}</title>
+  <link rel="icon" type="image/x-icon" href="{{site.url}}/assets/favicon.ico" />
   <link rel="stylesheet" href="{{site.url}}/assets/css/pico.min.css" />
   <link rel="stylesheet" href="{{site.url}}/assets/css/style.css" />
   <script src="{{site.url}}/assets/js/home-header.js"></script>
@@ -14,10 +15,26 @@
   {% endif %}
 
   <style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "IBM Plex Serif", serif;
+    }
+    p,
+    a,
+    li {
+      font-family: "IBM Plex Sans", sans-serif;
+    }
     /* Blue Light scheme (Default) */
     /* Can be forced with data-theme="light" */
     [data-theme="light"],
     :root:not([data-theme="dark"]) {
+      --card-box-shadow: transparent 0px 0px 0px 2px inset;
+      --grid-spacing-horizontal: 2rem;
+      --grid-spacing-vertical: 2rem;
       --primary: #186cb7;
       --primary-hover: #1976d2;
       --primary-focus: rgba(30, 136, 229, 0.125);
@@ -55,10 +72,21 @@
       --nav-link-spacing-horizontal: 15px;
       --form-element-spacing-vertical: 5px;
       --form-element-spacing-horizontal: 15px;
-      --border-radius: 0;
+      --border-radius: 32px;
+      --color: rgb(13, 17, 23);
+    }
+    h4 {
+      font-size: 1rem !important;
+    }
+    .post-title {
+      font-family: "IBM Plex Serif", serif;
     }
   </style>
 
-  <script src="/assets/js/three.r134.min.js"></script>
-  <script src="/assets/js/vanta.waves.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400&family=IBM+Plex+Serif:wght@700&display=swap"
+    rel="stylesheet"
+  />
 </head>

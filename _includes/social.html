@@ -1,1 +1,115 @@
-<a href="https://github.com/leabs" >GitHub</a><span> | </span><a href="https://www.linkedin.com/in/stevenleabo/" >LinkedIn</a><span> | </span><a href="https://twitter.com/Shadow_Stack" >Twitter</a><span> | </span><a href="https://codepen.io/leab" >CodePen</a><span> | </span><a href="https://open.spotify.com/user/stevenleabo">Spotify</a>
+<div class="grid social-icons">
+  <article style="background-color: #0e0d0d">
+    <div class="grid">
+      <div style="line-height: 140px">
+        <a href="https://github.com/leabs"
+          ><img
+            src="../assets/social/github.svg"
+            with="100"
+            height="100"
+            alt="github dark logo"
+            style="max-width: 100px; height: 100%"
+        /></a>
+      </div>
+      <!--List out the two most recently update code repos from https://api.github.com/users/leabs/repos-->
+      <script>
+        // Get the two most recently updated repos from https://api.github.com/users/leabs/repos
+        fetch("https://api.github.com/users/leabs/repos")
+          .then((response) => response.json())
+          .then((data) => {
+            // Sort the repos by most recently updated
+            data.sort((a, b) => {
+              return new Date(b.pushed_at) - new Date(a.pushed_at);
+            });
+            // Get the two most recently updated repos
+            const repos = data.slice(0, 5);
+            // Create a list of the two most recently updated repos
+            const list = repos
+              .map((repo) => {
+                return `<li style="list-style: none; margin-left:0; text-decoration: underline;"><a style="color:#fff;font-size:16px" href="${repo.html_url}">${repo.name}</a></li>`;
+              })
+              .join("");
+            // Add the list to the page
+            document.getElementById("github-right").innerHTML += list;
+          });
+      </script>
+      <div id="github-right" class="text-left" style="padding-bottom: 12px">
+        <h5
+          style="
+            color: #fff;
+            margin-bottom: 0;
+            margin-top: 10px;
+            font-size: 20px;
+          "
+        >
+          Recently Updated:
+        </h5>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="grid social-icons logos">
+  <article style="background: #1d9bf0">
+    <a href="https://twitter.com/Shadow_Stack"
+      ><img
+        src="../assets/social/twitter.svg"
+        with="50"
+        height="50"
+        alt="twitter blue logo"
+        style="max-width: 50px"
+    /></a>
+  </article>
+  <article style="background-color: #0077B5">
+    <a href="https://www.linkedin.com/in/stevenleabo/"
+      ><img
+        src="../assets/social/linkedin.svg"
+        with="90"
+        height="25"
+        alt="linkedin blue logo"
+        style="max-width: 90px"
+    /></a>
+  </article>
+  <article style="background: #000; margin-top: 0">
+    <a href="https://codepen.io/leab"
+      ><img
+        src="../assets/social/codepen.svg"
+        with="90"
+        height="25"
+        alt="codepen black logo"
+        style="max-width: 90px"
+    /></a>
+  </article>
+</div>
+
+<div class="grid social-icons logos text-center social-third-row">
+  <div>
+  <article style="padding:0; margin-bottom:0;">
+
+      <div>
+        <a href="https://open.spotify.com/user/stevenleabo"
+          ><img
+            src="../assets/social/spotify.svg"
+            with="80"
+            height="80"
+            alt="Spotify green logo"
+            style="max-width: 80px;"
+        /></a>
+      </div>
+     
+   
+  </article>
+  </div>
+  <div>
+  <article style="padding:0; margin-bottom:0; background: #282828; margin-top: 0">
+    <a href="https://www.youtube.com/@shadowstack"
+      ><img
+        src="../assets/social/youtube.svg"
+        with="100"
+        height="100"
+        alt="youtube logo"
+        style="max-width: 110px"
+    /></a>
+  </article>
+  </div>
+</div>

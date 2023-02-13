@@ -3,11 +3,12 @@ layout: default
 ---
 {% include blog/post-header.html %}
 <div class="container">
-  {% include breadcrumbs.html %}
 
-  <article>{{content}}</article>
-  <div class="text-center">
-    <a href="/" role="button">Back Home</a>
-  </div>
+  <article>
+    {{content}}
+    <div class="text-center">
+      <div><a class="button" href="/">Back Home</a></div>
+    </div>
+  </article>
 </div>
 

@@ -1,38 +1,22 @@
-<section id="blog">
-  <div class="container" style="padding-top: 60px">
-    <hgroup>
-      <h2>Featured Blog Posts:</h2>
-      <h3>Some thoughts on Web Development and/or life.</h3>
-    </hgroup>
+<section id="blog" style="margin-bottom:0;">
+  <div class="container">
     <div class="grid">
       <!-- Show latest blog post-->
       {% for post in site.posts limit:3 %}
-
       <div>
-        <article style="margin-top: 0">
-          <a href="{{ post.url }}"
-            ><img
-              style="margin-bottom: 12px; border: 1px solid #000"
-              src="{{site.url}}/assets/images/{{post.imagethumb}}"
-              alt="{{post.title}}"
-              width="656"
-              height="410"
-          /></a>
-          <hgroup>
-            <h2 style="font-size: 1.3rem; margin-bottom: 26px;">
-              <a href="{{post.url}}">{{post.title}}</a>
+        <article style="margin-top: 0; margin-bottom:20px;">
+          <div class="post-date"><span>Blog Post</span></div>
+            <h2 class="post-title">
+              {{post.title}}
             </h2>
-            <h3>{{posts.date | date: "%D" }}</h3>
-          </hgroup>
-
+            <div class="post-date"><span>{{post.date | date: "%D" }}</span></div>
           <p>{{post.description | strip_html}}</p>
+          <div class="grid">
+            <div><a class="button" href="{{post.url}}">Read More</a></div>
+          </div>
         </article>
       </div>
-
       {% endfor %}
-    </div>
-    <div class="text-center">
-      <a href="{{site.url}}/blog" role="button">View All Posts</a>
     </div>
   </div>
 </section>

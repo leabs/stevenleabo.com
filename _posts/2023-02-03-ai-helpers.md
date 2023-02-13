@@ -1,5 +1,5 @@
 ---
-title: "A.I. Will Revolutionize the Way We Work"
+title: "A.I. Will Revolutionize Work"
 description: "A.I. projects are helping programmers right now, and will be helping other occupations soon."
 date: "2023-02-03"
 tags: ['technology', 'ai']

@@ -1,43 +1,43 @@
-<section aria-label="Contact Container">
+<section aria-label="Contact Container" style="margin-bottom:0;">
   <div class="container">
-    <article style="max-width:600px; margin:0 auto;">
+    <article style="margin-bottom:0; margin:0 auto; padding-bottom:40px;">
       <div>
         <hgroup>
           <h2>Contact Me:</h2>
+          <br />
           <h3>Can I help in creating a website or app for you?</h3>
         </hgroup>
-        <form  action="https://formspree.io/f/xaybppen"
-        method="POST">
+        <form action="https://formspree.io/f/xaybppen" method="POST">
           <label for="email">Email:
-            <input type="text" id="email" name="email" placeholder="bob@aol.com" aria-label="email" required="" />
+            <input type="text" id="email" name="email" aria-label="email" required />
           </label>
           <label for="message">Message:
             <input name="message" type="text" id="speechTxt" value="hey Steve, we want you to work for us"
               required></input>
           </label>
-        <div>
-          <button type="submit" role="button" onclick="speaks()" class="secondary">Preview Message</button>
-          <button type="submit" role="button" type="submit">Send it!</button>
+          <div>
+            <div class="grid" style="text-align: center; margin-bottom:40px;">
+              <div><a style="width:156px; height:45px;" class="button" onclick="speaks()">Preview Message</a></div>
+            </div>
+            <div class="grid" style="text-align: center;">
+              <div><a style="width:156px; height:45px;" class="button" type="submit">Send</a></div>
+            </div>
         </form>
-        </div>
       </div>
     </article>
   </div>
-  </article>
-  </dialog>
+</section>
 
-  </div>
-
-  <script>
-    function speaks() {
-      let input = document.getElementById("speechTxt").value;
-      window.speechSynthesis.speak(new SpeechSynthesisUtterance(input));
-      /*wait 1 seconds before sending*/
-      setTimeout(readyToSend, 1000);
-    }
-    function readyToSend() {
-      window.speechSynthesis.speak(
-        new SpeechSynthesisUtterance("Ready to send your message?")
-      );
-    }
-  </script>
+<script>
+  function speaks() {
+    let input = document.getElementById("speechTxt").value;
+    window.speechSynthesis.speak(new SpeechSynthesisUtterance(input));
+    /*wait 1 seconds before sending*/
+    setTimeout(readyToSend, 1000);
+  }
+  function readyToSend() {
+    window.speechSynthesis.speak(
+      new SpeechSynthesisUtterance("Ready to send your message?")
+    );
+  }
+</script>
