@@ -260,6 +260,9 @@ h1 {
   #fun > article {
     text-align: center;
   }
+  .button-wrapper{
+    text-align: center;
+  }
 
   .social-icon-wrapper > .social-icons article {
     margin: 20px 0 !important;
