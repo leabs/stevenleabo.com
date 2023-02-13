@@ -183,21 +183,16 @@ h1 > span:hover {
   > article:nth-child(1) {
   animation: fading .5s ease-in;
 }
-#about
-  > div
-  > div
-  > div.social-icon-wrapper
-  > div:nth-child(3)
-  > article:nth-child(2) {
+#about > div > div > div.social-icon-wrapper > div:nth-child(2) > article:nth-child(3){
   animation: fading .6s ease-in;
 }
-#blog > div > div > div:nth-child(1) > article {
+#about > div > div > div.social-icon-wrapper > div.grid.social-icons.logos.text-center.social-third-row > div:nth-child(1) > article{
   animation: fading .7s ease-in;
 }
-#blog > div > div > div:nth-child(2) > article {
+#about > div > div > div.social-icon-wrapper > div.grid.social-icons.logos.text-center.social-third-row > div:nth-child(2) > article{
   animation: fading .8s ease-in;
 }
-#blog > div > div > div:nth-child(3) > article {
+#project-wrapper > article{
   animation: fading .9s ease-in;
 }
 #videos > div > article:nth-child(1) {
