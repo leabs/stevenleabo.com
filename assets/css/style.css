@@ -29,7 +29,7 @@ main {
   cursor: pointer;
 }
 .post-date {
-  color: #000;
+  --color: var(--muted-color);
   font-size: 18px;
   margin-bottom: 20px;
 }
