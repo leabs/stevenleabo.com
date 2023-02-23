@@ -1,7 +1,7 @@
 <div class="grid social-icons">
-  <article style="background-color: #0e0d0d">
+  <article style="background-color: #0e0d0d; min-height: 238px">
     <div class="grid">
-      <div style="line-height: 140px">
+      <div style="line-height: 180px">
         <a href="https://github.com/leabs"
           ><img
             src="../assets/social/github.svg"
@@ -11,9 +11,8 @@
             style="max-width: 100px; height: 100%"
         /></a>
       </div>
-      <!--List out the two most recently update code repos from https://api.github.com/users/leabs/repos-->
       <script>
-        // Get the two most recently updated repos from https://api.github.com/users/leabs/repos
+        // Get the Six most recently updated repos from https://api.github.com/users/leabs/repos
         fetch("https://api.github.com/users/leabs/repos")
           .then((response) => response.json())
           .then((data) => {
@@ -22,7 +21,7 @@
               return new Date(b.pushed_at) - new Date(a.pushed_at);
             });
             // Get the two most recently updated repos
-            const repos = data.slice(0, 5);
+            const repos = data.slice(0, 6);
             // Create a list of the two most recently updated repos
             const list = repos
               .map((repo) => {
@@ -60,7 +59,7 @@
         style="max-width: 50px"
     /></a>
   </article>
-  <article style="background-color: #0077B5">
+  <article style="background-color: #0077b5">
     <a href="https://www.linkedin.com/in/stevenleabo/"
       ><img
         src="../assets/social/linkedin.svg"
@@ -84,32 +83,38 @@
 
 <div class="grid social-icons logos text-center social-third-row">
   <div>
-  <article style="padding:0; margin-bottom:0;">
-
+    <article
+      style="padding: 0; margin-bottom: 0; background: #282828; margin-top: 0"
+    >
+      <a href="https://www.youtube.com/@shadowstack"
+        ><img
+          src="../assets/social/youtube.svg"
+          with="100"
+          height="100"
+          alt="youtube logo"
+          style="max-width: 90px"
+      /></a>
+    </article>
+  </div>
+  <div>
+    <article style="padding: 0; margin-bottom: 0">
       <div>
-        <a href="https://open.spotify.com/user/stevenleabo"
+        <a href="https://open.spotify.com/user/stevenleabo/playlists"
           ><img
             src="../assets/social/spotify.svg"
             with="80"
             height="80"
             alt="Spotify green logo"
-            style="max-width: 80px;"
+            style="max-width: 50px"
         /></a>
       </div>
-     
-   
-  </article>
+    </article>
   </div>
   <div>
-  <article style="padding:0; margin-bottom:0; background: #282828; margin-top: 0">
-    <a href="https://www.youtube.com/@shadowstack"
-      ><img
-        src="../assets/social/youtube.svg"
-        with="100"
-        height="100"
-        alt="youtube logo"
-        style="max-width: 110px"
-    /></a>
-  </article>
+    <article
+      style="padding: 0; margin-bottom: 0; background: #0e0d0d; margin-top: 0"
+    >
+      <a class="text-white" href="/apps">Apps I Use</a>
+    </article>
   </div>
 </div>

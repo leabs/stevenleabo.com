@@ -3,8 +3,8 @@ body {
   padding: 0;
   background-image: radial-gradient(
     circle 1224px at 10.6% 8.8%,
-    rgba(235, 235, 235, 0.15) 10%,
-    rgb(247, 242, 242) 100.2%
+    rgba(235, 235, 235, 0.45) 10%,
+    rgb(247, 242255, 255) 100.2%
   );
 }
 body > header,
@@ -18,7 +18,7 @@ main {
   color: #000;
   border: 3px solid rgba(0, 0, 0, 0.1);
   padding: 10px 20px;
-  border-radius: 20px;
+  border-radius: 0;
   text-decoration: none;
   font-weight: 500;
   font-size: 0.75rem;
@@ -113,8 +113,11 @@ h1 > span:hover {
   text-align: center;
 }
 
-.text-left{
+.text-left {
   text-align: left;
+}
+.text-white {
+  color: #fff;
 }
 
 .featured-post > div,
@@ -134,24 +137,24 @@ h1 > span:hover {
 .social-icons > article {
   padding: 0;
   margin-bottom: var(--grid-spacing-vertical);
-  min-height: 100px;
+  min-height: 114px;
   text-align: center;
 }
 .logos > article {
-  height:100px;
-  line-height: 100px;
+  height: 114px;
+  line-height: 114px;
 }
 .social-icons > article > a > img {
-  max-height: 100px;
+  max-height: 114px;
 }
 
 .social-icon-wrapper > .social-icons article:nth-child(1),
 .social-icon-wrapper > .social-icons article:nth-child(2) {
   margin-top: 0;
 }
-.social-third-row{
-  height:136px;
-  line-height:136px;
+.social-third-row {
+  height: 115px;
+  line-height: 115px;
 }
 #about > div > div > div:nth-child(1) > article {
   animation: fading 0.1s ease-in;
@@ -181,19 +184,45 @@ h1 > span:hover {
   > div.social-icon-wrapper
   > div:nth-child(3)
   > article:nth-child(1) {
-  animation: fading .5s ease-in;
+  animation: fading 0.5s ease-in;
 }
-#about > div > div > div.social-icon-wrapper > div:nth-child(2) > article:nth-child(3){
-  animation: fading .6s ease-in;
+#about
+  > div
+  > div
+  > div.social-icon-wrapper
+  > div:nth-child(2)
+  > article:nth-child(3) {
+  animation: fading 0.6s ease-in;
 }
-#about > div > div > div.social-icon-wrapper > div.grid.social-icons.logos.text-center.social-third-row > div:nth-child(1) > article{
-  animation: fading .7s ease-in;
+#about
+  > div
+  > div
+  > div.social-icon-wrapper
+  > div.grid.social-icons.logos.text-center.social-third-row
+  > div:nth-child(3)
+  > article {
+  animation: fading 0.7s ease-in;
 }
-#about > div > div > div.social-icon-wrapper > div.grid.social-icons.logos.text-center.social-third-row > div:nth-child(2) > article{
-  animation: fading .8s ease-in;
+#about
+  > div
+  > div
+  > div.social-icon-wrapper
+  > div.grid.social-icons.logos.text-center.social-third-row
+  > div:nth-child(1)
+  > article {
+  animation: fading 0.7s ease-in;
 }
-#project-wrapper > article{
-  animation: fading .9s ease-in;
+#about
+  > div
+  > div
+  > div.social-icon-wrapper
+  > div.grid.social-icons.logos.text-center.social-third-row
+  > div:nth-child(2)
+  > article {
+  animation: fading 0.8s ease-in;
+}
+#project-wrapper > article {
+  animation: fading 0.9s ease-in;
 }
 #videos > div > article:nth-child(1) {
   animation: fading 1s ease-in;
@@ -246,7 +275,7 @@ h1 {
     text-overflow: ellipsis;
   }
   #github-right {
-    padding-bottom:8px;
+    padding-bottom: 8px;
     text-align: center;
   }
   #github-right > h5 {
@@ -255,7 +284,7 @@ h1 {
   #fun > article {
     text-align: center;
   }
-  .button-wrapper{
+  .button-wrapper {
     text-align: center;
   }
 
@@ -266,10 +295,10 @@ h1 {
     grid-column-gap: 0;
     grid-row-gap: 0;
   }
-  .social-third-row{
-    height:100px;
-    line-height:100px;
-    margin-bottom:12rem;
+  .social-third-row {
+    height: auto;
+    line-height: 100px;
+    margin-bottom: 0;
   }
 }
 
@@ -280,4 +309,30 @@ h1 {
   100% {
     opacity: 1;
   }
+}
+
+.card:first-of-type {
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+.card:last-of-type {
+  margin-right: 0;
+}
+
+.card {
+  text-align: center;
+  width: calc(50% - 2rem);
+  background: #fff;
+  margin-bottom: 2rem;
+  border-radius: 32px;
+  padding: var(--block-spacing-vertical) var(--block-spacing-horizontal);
+  display: grid;
+}
+.external-link:after {
+  font-size: 0.6rem;
+  content: "↗";
+  padding-right: 13px;
+}
+.pr-images {
+  border-radius: 32px;
 }

@@ -7,7 +7,7 @@
   <link rel="icon" type="image/x-icon" href="{{site.url}}/assets/favicon.ico" />
   <link rel="stylesheet" href="{{site.url}}/assets/css/pico.min.css" />
   <link rel="stylesheet" href="{{site.url}}/assets/css/style.css" />
-  <script src="{{site.url}}/assets/js/home-header.js"></script>
+  <script src="{{site.url}}/assets/js/commits.js"></script>
   <!--If homepage load home-header.js-->
   {% if page.url == '/' %}
 
@@ -72,7 +72,7 @@
       --nav-link-spacing-horizontal: 15px;
       --form-element-spacing-vertical: 5px;
       --form-element-spacing-horizontal: 15px;
-      --border-radius: 32px;
+      --border-radius: 0;
       --color: rgb(13, 17, 23);
     }
     h4 {
@@ -80,11 +80,12 @@
     }
     .post-title,
     .post-date,
-    .headings>:last-child, hgroup>:last-child {
+    .headings > :last-child,
+    hgroup > :last-child {
       font-family: "IBM Plex Serif", serif;
-      color: hsl(205deg, 25%, 23%)!important;
+      color: hsl(205deg, 25%, 23%) !important;
     }
-    h1{
+    h1 {
       --color: var(--h3-color);
     }
   </style>
