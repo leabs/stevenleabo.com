@@ -21,11 +21,15 @@
               return new Date(b.pushed_at) - new Date(a.pushed_at);
             });
             // Get the two most recently updated repos
-            const repos = data.slice(0, 6);
+            const repos = data.slice(0, 4);
             // Create a list of the two most recently updated repos
             const list = repos
               .map((repo) => {
-                return `<li style="list-style: none; margin-left:0; text-decoration: underline;"><a style="color:#fff;font-size:16px" href="${repo.html_url}">${repo.name}</a></li>`;
+                return `<li style="list-style: none; text-decoration: underline; min-height: 40px; margin:.25rem 0;"><a class="repo-button" style="color:#fff;
+                background: 282828;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                padding: 5px 10px;
+              " href="${repo.html_url}">${repo.name}</a></li>`;
               })
               .join("");
             // Add the list to the page
