@@ -11,8 +11,8 @@ var projects = [
     pr: "https://github.com/shadcn/ui/pull/102",
   },
   {
-    link: "drjekyllthemes/themes",
-    pr: "https://github.com/drjekyllthemes/themes/pull/159",
+    link: "facebook/react-native-website",
+    pr: "https://github.com/facebook/react-native-website/pull/3589",
   },
 ];
 
@@ -36,6 +36,6 @@ projects.forEach((project) => {
       //List out the projects
       document.getElementById(
         "projects"
-      ).innerHTML += `<article style="margin:0;" class="text-center"><div><a target="_blank" class="external-link" href="https://github.com/${project.link}">${project.link} </a></div><p>${project.cleanStars} &#11088;</p><img alt="${project.link} avatar from github" class="pr-images" src="${project.avatar}" /></article>`;
+      ).innerHTML += `<article style="margin:0;" class="text-center"><div><a target="_blank" style="font-size:16px;" class=" " href="https://github.com/${project.link}">${project.link} </a></div><p>${project.cleanStars} &#11088;</p><img style="border: solid 1px #000;" alt="${project.link} avatar from github" class="pr-images" src="${project.avatar}" /></article>`;
     });
 });
