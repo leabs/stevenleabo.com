@@ -1,6 +1,9 @@
 <script>
+
+  const GOOGLEAPI = process.env.GOOGLEAPIKEY
+  const CHANNELID = process.env.CHANNELID
   fetch(
-    "https://www.googleapis.com/youtube/v3/search?key={{site.data.env.GOOGLEAPI}}&channelId={{site.data.env.CHANNELID}}&part=snippet,id&order=date&maxResults=20"
+    "https://www.googleapis.com/youtube/v3/search?key=`${GOOGLEAPIKEY}`&channelId=${CHANNELID}&part=snippet,id&order=date&maxResults=20"
   )
     .then((response) => response.text())
     .then((data) => {
