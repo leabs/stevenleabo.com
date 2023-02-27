@@ -1,10 +1,16 @@
 <div class="container" id="project-wrapper">
-  <article style="margin-top: 0; margin-bottom: 2rem; background:rgba(0,0,0,0.0025);border:3px solid #fff;">
+  <article style="margin-top: 0; margin-bottom: 2rem; background-color: var(--highlight3);    padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;">
+    <!--Autoplay video called mirror-vid.mp4-->
+    <video autoplay muted loop id="myVideo" style="width:100%; border-radius:20px 20px 0 0;">
+      <source src="{{site.baseurl}}/assets/video/mirror-vid.mp4" type="video/mp4">
+    </video>
     <div class="gird">
-      <div>
-        <div class="post-date"><span style="">Project</span></div>
-        <h3>MagicMirror Modules</h3>
-        <p style="color:#000">
+      <div style="padding: var(--block-spacing-vertical) var(--block-spacing-horizontal); padding-bottom:0;">
+        <div class="post-date"><span>Project</span></div>
+        <h3 style="color:">MagicMirror Modules</h3>
+        <p style="color:">
           MagicMirror is a highly sought-after open-source project that enables users to create a smart mirror utilizing an old monitor and a Raspberry Pi. It is coded in JavaScript and operates on Node.js. This is an excellent opportunity to commence your open-source journey. Feel free to explore the modules I have developed below.
         </p>
         <br />
@@ -13,10 +19,10 @@
       </div>
       <div class="grid text-center">
         <div>
-          <p style="color:#000">This module displays a random word from the urbandictionary API and refreshes every 3 minutes.</p>
-          <a style="background:#fff" href="https://github.com/leabs/MMM-urbandictionary" class="button">MMM-urbandictionary</a></div>
-        <div><p style="color:#000">This module tells the user if today is Friday the 13th by fetching the date and day in javascript.</p>
-          <a style="background:#fff" href="https://github.com/leabs/MMM-friday-the-13th" class="button">MMM-friday-the-13th</a></div>
+          <p style="color:">This module displays a random word from the urbandictionary API and refreshes every 3 minutes.</p>
+          <a style="background:" href="https://github.com/leabs/MMM-urbandictionary" class="button">MMM-urbandictionary</a></div>
+        <div><p style="color:">This module tells the user if today is Friday the 13th by fetching the date and day in javascript.</p>
+          <a style="background:" href="https://github.com/leabs/MMM-friday-the-13th" class="button">MMM-friday-the-13th</a></div>
       </div>
     </div>
   </article>

@@ -16,6 +16,17 @@
   {% endif %}
 
   <style>
+    :root {
+      --darkest: #1c1c29;
+      --highlight: #7ed7e8;
+      --highlight2: #9cdf97;
+      --highlight3: #f9aa7c;
+      --black: #0e0d0d;
+    }
+    body {
+      color: var(--ctp-mocha-text);
+      background: var(--darkest);
+    }
     h1,
     h2,
     h3,
@@ -28,6 +39,7 @@
     a,
     li {
       font-family: "IBM Plex Sans", sans-serif;
+      color:var(--black);
     }
     /* Blue Light scheme (Default) */
     /* Can be forced with data-theme="light" */
@@ -73,7 +85,7 @@
       --nav-link-spacing-horizontal: 15px;
       --form-element-spacing-vertical: 5px;
       --form-element-spacing-horizontal: 15px;
-      --border-radius: 0;
+      --border-radius: 25px;
       --color: rgb(13, 17, 23);
     }
     h4 {
@@ -84,10 +96,22 @@
     .headings > :last-child,
     hgroup > :last-child {
       font-family: "IBM Plex Serif", serif;
-      color: hsl(205deg, 25%, 23%) !important;
+      color: var(--darkest);
     }
-    h1 {
-      --color: var(--h3-color);
+    h1, h2, h3{
+      --color: var(--darkest);
+    }
+    #blog > article > .post-title{
+      color:var(--darkest);
+    }
+    #blog > div > div > div:nth-child(1) > article {
+      background-color: var(--highlight);
+    }
+    #blog > div > div > div:nth-child(2) > article {
+      background-color: var(--highlight2);
+    }
+    #blog > div > div > div:nth-child(3) > article {
+      background-color: #fff;
     }
   </style>
 

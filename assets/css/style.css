@@ -15,29 +15,21 @@ main {
   padding-bottom: 2rem;
 }
 .button {
-  color: #000;
-  border: 3px solid rgba(0, 0, 0, 0.1);
+  background: var(--darkest);
+  color: #fff;
   padding: 10px 20px;
-  border-radius: 0;
+  border-radius: 25px;
   text-decoration: none;
   font-weight: 500;
   font-size: 0.75rem;
   transition: all 0.2s ease-in-out;
 }
-.repo-button {
-  color: #fff;
-  background: 282828;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 5px 10px;
-  min-height: 70px !important;
-  margin-bottom: 3rem;
-}
 .button:hover {
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 2px 10px rgba(0,0,0,0.3);
   cursor: pointer;
 }
 .post-date {
-  --color: var(--muted-color);
+  --color: var(--darkest);
   font-size: 18px;
   margin-bottom: 20px;
 }
