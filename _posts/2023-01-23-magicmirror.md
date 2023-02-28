@@ -25,7 +25,7 @@ layout: post
 
 MagicMirror is a widely popular open source project that allows you to build a smart mirror using an old monitor and a Raspberry Pi. It is written in JavaScript and runs on Node.js. Its a great project to get started with open source and I highly recommend it. There are great examples of mirrors on reddit. It's a unique project that can't be purchased anywhere and mixes hardware and software.
 
-<figure>
+<figure id="mirror-image">
   <img
     src="{{site.url}}/assets/images/blog/mirror2.PNG"
     alt="My MagicMirror on display."
