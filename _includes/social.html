@@ -1,7 +1,8 @@
 <div class="grid social-icons">
-  <article style="background-color: var(--black); min-height: 238px">
+  <article class="matched-radius" style="min-height: 224px">
+    <div class="matched-radius__inner" style="background-color: var(--black);">
     <div class="grid">
-      <div style="line-height: 238px">
+      <div style="line-height: 224px">
         <a href="https://github.com/leabs"><img src="../assets/social/github.svg" with="100" height="100"
             alt="github dark logo" style="max-width: 100px; height: 100px" /></a>
       </div>
@@ -22,7 +23,7 @@
                 return `<a class="button repo-button" style="color:#fff;
                 padding: 7px 14px;
                 font-size: 16px;
-                line-height:44px;
+                line-height:38px;
               " href="${repo.html_url}">${repo.name}</a><br  />`;
               })
               .join("");
@@ -41,36 +42,46 @@
           Recently Updated:
         </h5>
       </div>
+      </div>
     </div>
   </article>
 </div>
 
 <div class="grid social-icons logos">
-  <article style="background: #1d9bf0">
-    <a href="https://twitter.com/Shadow_Stack"><img src="../assets/social/twitter.svg" with="50" height="50"
-        alt="twitter blue logo" style="max-width: 50px" /></a>
+  <article class="matched-radius">
+    <div class="matched-radius__inner" style="background: #1d9bf0">
+    <a href="https://twitter.com/Shadow_Stack" ><img src="../assets/social/twitter.svg" with="50" height="50"
+        alt="twitter blue logo" style="max-width: 40px" /></a>
+      </div>
   </article>
-  <article style="background-color: #0077b5">
+  <article class="matched-radius">
+    <div class="matched-radius__inner" style="background-color: #0077b5">
     <a href="https://www.linkedin.com/in/stevenleabo/"><img src="../assets/social/linkedin.svg" with="90" height="25"
         alt="linkedin blue logo" style="max-width: 90px" /></a>
+        </div>
   </article>
-  <article style="background: #000; margin-top: 0">
+  <article class="matched-radius" style="margin-top:0;">
+    <div class="matched-radius__inner" style="background: #000;">
     <a href="https://codepen.io/leab"><img src="../assets/social/codepen.svg" with="90" height="25"
         alt="codepen black logo" style="max-width: 90px" /></a>
+        </div>
   </article>
 </div>
 
 <div class="grid social-icons logos text-center social-third-row">
   <div>
-    <article style="padding: 0; margin-bottom: 0; background: #282828; margin-top: 0">
+    <article class="matched-radius" style="padding: 0; margin-bottom: 0; margin-top: 0">
+      <div class="matched-radius__inner" style="background: #282828;">
       <a href="https://www.youtube.com/@shadowstack"><img src="../assets/social/youtube.svg" with="100" height="100"
-          alt="youtube logo" style="max-width: 90px" /></a>
+          alt="youtube logo" style="max-width: 80px" /></a>
+          </div>
     </article>
+   
   </div>
   <div>
     <a href="https://open.spotify.com/user/stevenleabo/playlists">
-      <article style="padding: 0; margin-bottom: 0">
-        <div>
+      <article   class="matched-radius" style="padding: 0; margin-bottom: 0">
+        <div class="matched-radius__inner">
           <img src="../assets/social/spotify.svg" with="80" height="80" alt="Spotify green logo"
             style="max-width: 50px" />
         </div>
@@ -78,13 +89,15 @@
     </a>
   </div>
   <div>
-    <article style="padding: 0; margin-bottom: 0; background: var(--black); margin-top: 0">
+    <article  class="matched-radius" style="padding: 0; margin-bottom: 0; margin-top: 0">
+      <div class="matched-radius__inner" style="background: var(--black);">
       <a class="text-white" href="/apps"><svg width="55" height="55" viewBox="0 0 15 15" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path
             d="M2 4.25C2 4.11193 2.11193 4 2.25 4H12.75C12.8881 4 13 4.11193 13 4.25V11.5H2V4.25ZM2.25 3C1.55964 3 1 3.55964 1 4.25V12H0V12.5C0 12.7761 0.223858 13 0.5 13H14.5C14.7761 13 15 12.7761 15 12.5V12H14V4.25C14 3.55964 13.4404 3 12.75 3H2.25Z"
             fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
         </svg></a>
+        </div>
     </article>
   </div>
 </div>

@@ -24,6 +24,8 @@
       --highlight3: #f9aa7c;
       --highlight4: #c49cf6;
       --black: #0e0d0d;
+      --matched-radius-padding: 10px;
+      --matched-radius-inner-size: 12px;
     }
     body {
       color: var(--ctp-mocha-text);
@@ -107,14 +109,14 @@
     #blog > article > .post-title {
       color: var(--darkest);
     }
-    #blog > div > div > div:nth-child(1) > article {
-      background-color: var(--highlight);
+    #blog > div > div > div:nth-child(1) > article > div > div {
+      background: var(--highlight) !important;
     }
-    #blog > div > div > div:nth-child(2) > article {
-      background-color: var(--highlight4);
+    #blog > div > div > div:nth-child(2) > article > div > div {
+      background: var(--highlight4) !important;
     }
-    #blog > div > div > div:nth-child(3) > article {
-      background-color: var(--highlight3);
+    #blog > div > div > div:nth-child(3) > article > div > div {
+      background: var(--highlight3) !important;
     }
   </style>
 

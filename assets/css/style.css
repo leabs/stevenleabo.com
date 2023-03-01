@@ -10,6 +10,26 @@ body > main {
 main {
   padding-bottom: 2rem;
 }
+.matched-radius {
+  background:white;
+  padding: 10px !important;
+  border-radius: 25px;
+}
+
+.matched-radius__inner {
+  border-radius: 15px;
+}
+
+#blog  .matched-radius{
+  background: #fff !important;
+}
+#blog  .matched-radius__inner{
+  padding: var(--block-spacing-vertical) var(--block-spacing-horizontal);
+}
+
+::marker {
+  color: transparent;
+}
 .custom-grid{
   display: flex;
   flex-wrap: wrap;
@@ -153,11 +173,11 @@ h1 > span:hover {
   text-align: center;
 }
 .logos > article {
-  height: 114px;
-  line-height: 114px;
+  height: 94px;
+  line-height: 94px;
 }
 .social-icons > article > a > img {
-  max-height: 114px;
+  max-height: 90px;
 }
 
 .social-icon-wrapper > .social-icons article:nth-child(1),
@@ -165,8 +185,8 @@ h1 > span:hover {
   margin-top: 0;
 }
 .social-third-row {
-  height: 115px;
-  line-height: 115px;
+  height: 94px;
+  line-height: 94px;
 }
 #about > div > div > div.social-icon-wrapper > div:nth-child(1) > article {
   animation: fading 0.2s ease-in;
@@ -330,7 +350,7 @@ h1 {
   }
   .social-third-row {
     height: auto;
-    line-height: 100px;
+    line-height: 88px;
     margin-bottom: 0;
   }
   .more-posts > article {

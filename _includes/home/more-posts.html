@@ -3,43 +3,52 @@
     <div class="grid">
       <div>
         <article
-          style="margin-top: 0; margin-bottom: 0; background: var(--black)"
+          style="margin-top: 0; padding:0; margin-bottom: 0;"
         >
-          <h2 class="text-white">More Blog Posts</h2>
-          <ul style="list-style: none; padding-left: 0">
-            {% for post in site.posts | limit: 7 %}
-            <!--Exclude the 3 most recent posts-->
-            {% if forloop.index > 3 %}
-            <li>
-              <a
-                href="{{ post.url | prepend: site.baseurl }}"
-                class="text-white"
-                >{{ post.date | date: "%D" }} - {{ post.title | truncate: 34
-                }}</a
-              >
-            </li>
-            {% endif %} {% endfor %}
-          </ul>
-          <a href="/blog" class="button">View All</a>
+        <div class="matched-radius">
+          <div class="matched-radius__inner" style="background: var(--black); padding: var(--block-spacing-vertical) var(--block-spacing-horizontal);">
+            <h2 class="text-white">More Blog Posts</h2>
+            <ul style="list-style: none; padding-left: 0">
+              {% for post in site.posts | limit: 7 %}
+              <!--Exclude the 3 most recent posts-->
+              {% if forloop.index > 3 %}
+              <li>
+                <a
+                  href="{{ post.url | prepend: site.baseurl }}"
+                  class="text-white"
+                  >{{ post.date | date: "%D" }} - {{ post.title | truncate: 34
+                  }}</a
+                >
+              </li>
+              {% endif %} {% endfor %}
+            </ul>
+            <a href="/blog" class="button">View All</a>
+          </div>
+        </div>
+          
         </article>
       </div>
       <div>
         <article
           style="
-            height: 214px;
-            padding: 40px 20px;
-            background: var(--highlight2);
+            
+            padding:0;
             margin-top: 0;
             margin-bottom: 2rem;
           "
           class="text-center"
         >
-          <h2 style="margin-bottom: 2rem">Contact Me</h2>
+        <div class="matched-radius">
+          <div class="matched-radius__inner" style="background: var(--highlight2); padding: 45px 10px">
+            <h2 style="margin-bottom: 2rem">Contact Me</h2>
           <a href="mailto:stevenleabo@gmail.com" class="button">Email</a>
           <a href="https://www.linkedin.com/in/stevenleabo/" class="button"
             >Linkedin</a
           >
           <a href="https://twitter.com/Shadow_Stack" class="button">Twitter</a>
+          </div>
+        </div>
+          
         </article>
         <article
           style="height: 214px; padding: 20px 20px; margin: 0"

@@ -1,6 +1,6 @@
 ---
 title: "I Coded a MagicMirror Module"
-description: "I coded a MagicMirror module called MMM-urbandictionary that displays a random word from Urban Dictionary."
+description: "A MagicMirror module called MMM-urbandictionary that shows random funny words."
 date: "2023-01-23"
 tags: ['projects', 'open-source']
 featured: true
