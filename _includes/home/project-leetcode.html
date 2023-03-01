@@ -2,15 +2,16 @@
   <div class="container">
     <div>
       <div class="video-container">
-        <video playsinline autoplay muted loop>
+        <video preload autoplay muted loop playsinline>
+          <!--Placeholder image until video loads-->
           <img
             src="{{site.baseurl}}/assets/video/background.png"
             alt="Placeholder image until video loads"
             style="width: 100%; border-radius: 20px 20px 0 0"
           />
           <source
-            src="../../assets/video/blog-background.mp4"
-            type="video/webm"
+            src="{{site.baseurl}}/assets/video/blog-background.mp4"
+            type="video/mp4"
           />
         </video>
         <div class="caption text-center" style="border-radius: 25px">
@@ -33,13 +34,15 @@
                 <p class="text-white text-left">
                   Leetcode answers is a daily blog featuring the questions and
                   answers to the
-                  <a href="https://leetcode.com/" class="text-highlight"
+                  <a
+                    href="https://leetcode.com/"
+                    class="text-underline text-highlight"
                     >LeetCode</a
                   >
                   problem of the day. This is a totally custom layout I later
                   turning into a theme called
                   <a
-                    class="text-highlight"
+                    class="text-underline text-highlight"
                     href="https://github.com/leabs/jekyll-opine"
                     >jekyll-opine</a
                   >. It features post comments, built in search, and responsive

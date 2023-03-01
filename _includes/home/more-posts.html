@@ -5,7 +5,7 @@
         <article
           style="margin-top: 0; margin-bottom: 0; background: var(--black)"
         >
-          <h2 class="text-white">More Posts</h2>
+          <h2 class="text-white">More Blog Posts</h2>
           <ul style="list-style: none; padding-left: 0">
             {% for post in site.posts | limit: 7 %}
             <!--Exclude the 3 most recent posts-->
@@ -14,7 +14,7 @@
               <a
                 href="{{ post.url | prepend: site.baseurl }}"
                 class="text-white"
-                >{{ post.date | date: "%D" }} - {{ post.title | truncate: 38
+                >{{ post.date | date: "%D" }} - {{ post.title | truncate: 36
                 }}</a
               >
             </li>
