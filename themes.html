@@ -1,0 +1,41 @@
+---
+title: Themes
+subtitle: A list of themes that I have a license for that can be used with my clients.
+layout: blog-index
+permalink: /themes/
+---
+
+<br />
+<article class="theme">
+  {% assign themes_sorted = site.data.themes | sort: 'name' %} {% for theme in
+  themes_sorted %}
+  <div class="grid">
+    <div>
+      <img
+        style="
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+          max-height: 100%;
+          max-width: 100%;
+          display: block;
+          margin: 0 auto;
+          border-radius: 15px;
+        "
+        height="1200"
+        width="1200"
+        src="{{site.baseurl}}/assets/images/{{ theme.image }}"
+        alt="{{ theme.name }}"
+      />
+    </div>
+    <div style="display: flex; flex-direction: column; justify-content: center">
+      <h2>{{ theme.name }}</h2>
+      <p>Type: {{ theme.type }}</p>
+      <p><a class="button" href="{{ theme.link }}">Live Demo</a></p>
+    </div>
+  </div>
+  <hr />
+  {% endfor %}
+  <br />
+  <div class="button-wrapper text-center">
+    <a href="/" class="button" style="background: var(--black)">Home</a>
+  </div>
+</article>
