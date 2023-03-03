@@ -360,10 +360,10 @@ h1 {
   }
   .logos > article > div > a > img,
   .social-third-row div> article > div > a > img{
-   max-width:80px !important;
+   max-width:60px !important;
   }
   .logos> article:first-of-type  > div > a > img{
-   max-width:50px !important;
+   max-width:40px !important;
   }
   .logos > article,
   .social-third-row >  div{
