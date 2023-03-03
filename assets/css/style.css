@@ -326,6 +326,9 @@ h1 {
     display: block;
     text-overflow: ellipsis;
   }
+  .center-sm{
+    text-align: center;
+  }
   #github-right {
     padding-bottom: 8px;
     text-align: center;
@@ -339,9 +342,6 @@ h1 {
   .button-wrapper {
     text-align: center;
   }
-  .social-icon-wrapper > .social-icons article {
-    margin: 20px 0 !important;
-  }
   .social-icon-wrapper > .grid {
     grid-column-gap: 0;
     grid-row-gap: 0;
@@ -349,7 +349,28 @@ h1 {
   .social-third-row {
     height: auto;
     line-height: 88px;
-    margin-bottom: 0;
+  }
+  .social-third-row > div > article{
+    margin-bottom: 2rem !important;
+  }
+  .logos,
+  .social-third-row{
+    display: flex;
+    gap: 2rem !important;
+  }
+  .logos > article > div > a > img,
+  .social-third-row div> article > div > a > img{
+   max-width:80px !important;
+  }
+  .logos> article:first-of-type  > div > a > img{
+   max-width:50px !important;
+  }
+  .logos > article,
+  .social-third-row >  div{
+    width: 60% !important;
+  }
+  #about{
+    margin-bottom: 0 !important;
   }
   .more-posts > article {
     background: var(--darkest) !important;
