@@ -7,12 +7,12 @@
             <div
               class="matched-radius__inner"
               style="
-                background-image: linear-gradient(white, var(--darkest));
+                background-image: linear-gradient(var(--darkest), #000);
                 padding: var(--block-spacing-vertical)
                   var(--block-spacing-horizontal);
               "
             >
-              <h2>More Blog Posts</h2>
+              <h2 class="text-white">More Blog Posts</h2>
               <ul style="list-style: none; padding-left: 0">
                 {% for post in site.posts | limit: 7 %}
                 <!--Exclude the 3 most recent posts-->
@@ -20,7 +20,7 @@
                 <li>
                   <a
                     href="{{ post.url | prepend: site.baseurl }}"
-                    style="color: var(--black)"
+                    class="text-white"
                     >{{ post.date | date: "%D" }} - {{ post.title | truncate: 34
                     }}</a
                   >
