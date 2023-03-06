@@ -2,7 +2,7 @@
 title: "Focuses For Web Developers"
 description: "Collection of topics that are important to webdevs."
 date: "2022-02-17"
-tags: ['web-development']
+tags: ['Web Development']
 layout: post
 ---
 For me, starting my journey with web development was somewhat stressful. I think people (myself included) often feel as if they need to create the next big thing to leave their mark on a space. The reality is the most beneficial knowledge in web development is utilizing what has already been created.

@@ -2,7 +2,7 @@
 title: "Less is More: I Love Static Sites"
 description: "My fondness for static sites and why it's so rewarding to build a project using the least amount of resources possible."
 date: "2022-03-19"
-tags: ['web-development','open-source', 'jekyll']
+tags: ['Web Development','Open Source', 'Jekyll']
 layout: post
 image: "leet-code.png"
 imagethumb: "leet-code-thumb.webp"

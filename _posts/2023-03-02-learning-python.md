@@ -2,7 +2,7 @@
 title: "Learning Python in my Free Time"
 description: "I'm building random projects in Python to learn the language and to see coding live outside of WebDev."
 date: "2023-03-02"
-tags: ["python", "coding"]
+tags: ["Python", "Coding"]
 featured: true
 layout: post
 ---

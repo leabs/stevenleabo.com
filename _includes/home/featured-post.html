@@ -4,9 +4,11 @@
       <!-- Show latest blog post-->
       {% for post in site.posts limit:3 %}
       <div>
-        <article style="padding: 0; margin-top: 0; margin-bottom: 0; min-height:100%">
-          <div class="matched-radius" style="min-height:100%">
-            <div class="matched-radius__inner" style="min-height:100%">
+        <article
+          style="padding: 0; margin-top: 0; margin-bottom: 0; min-height: 100%"
+        >
+          <div class="matched-radius" style="min-height: 100%">
+            <div class="matched-radius__inner" style="min-height: 100%">
               <div class="post-date"><span>Blog Post</span></div>
               <h2 class="post-title">{{post.title}}</h2>
               <div class="post-date">

@@ -2,7 +2,7 @@
 title: "I Coded a MagicMirror Module"
 description: "A MagicMirror module called MMM-urbandictionary that shows random funny words."
 date: "2023-01-23"
-tags: ['projects', 'open-source']
+tags: ['Projects', 'Open Source']
 featured: true
 image: "mirror.png"
 imagethumb: "mirror-thumb.webp"

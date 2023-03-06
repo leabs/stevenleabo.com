@@ -8,12 +8,16 @@ body > main {
 }
 main {
   padding-bottom: 2rem;
+  min-height:90vh;
 }
+
+
 .matched-radius {
   background: white;
   padding: 10px !important;
   border-radius: 25px;
 }
+
 
 .matched-radius__inner {
   border-radius: 15px;
@@ -140,7 +144,7 @@ h1 > span:hover {
   text-align: left;
 }
 .text-white {
-  color: #fff;
+  color: #fff !important;
 }
 .text-highlight {
   color: var(--highlight);
@@ -262,6 +266,10 @@ h1 > span:hover {
   animation: fading 1.2s ease-in;
 }
 
+td, th{
+  border-bottom: none !important;
+}
+
 /* #videos{
   padding: 60px 0;
   background: linear-gradient(
@@ -317,6 +325,10 @@ h1 {
   padding: 10px;
 }
 
+#more-posts > div > article > div > div > table > tbody > tr > td:nth-child(2) > a:hover{
+color:var(--highlight) !important;
+}
+
 /*Adjust padding on smaller screens */
 @media screen and (max-width: 991px) {
   .breadcrumbs {
@@ -326,7 +338,7 @@ h1 {
     display: block;
     text-overflow: ellipsis;
   }
-  .center-sm{
+  .center-sm {
     text-align: center;
   }
   #github-right {
@@ -350,26 +362,26 @@ h1 {
     height: auto;
     line-height: 88px;
   }
-  .social-third-row > div > article{
+  .social-third-row > div > article {
     margin-bottom: 2rem !important;
   }
   .logos,
-  .social-third-row{
+  .social-third-row {
     display: flex;
     gap: 2rem !important;
   }
   .logos > article > div > a > img,
-  .social-third-row div> article > div > a > img{
-   max-width:60px !important;
+  .social-third-row div > article > div > a > img {
+    max-width: 60px !important;
   }
-  .logos> article:first-of-type  > div > a > img{
-   max-width:40px !important;
+  .logos > article:first-of-type > div > a > img {
+    max-width: 40px !important;
   }
   .logos > article,
-  .social-third-row >  div{
+  .social-third-row > div {
     width: 60% !important;
   }
-  #about{
+  #about {
     margin-bottom: 0 !important;
   }
   .more-posts > article {
@@ -390,6 +402,16 @@ h1 {
   article {
     margin-top: 0 !important;
     margin-bottom: 34px;
+  }
+  table{
+    max-width:100% !important;
+    overflow: hidden !important;
+    font-size: 1rem;
+    margin-bottom:0;
+  }
+  #more-posts > div > article > div > div > table > thead > tr > th:nth-child(3),
+  #more-posts > div > article > div > div > table > tbody > tr > td:nth-child(3){
+    display: none;
   }
 }
 
