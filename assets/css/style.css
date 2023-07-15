@@ -8,16 +8,14 @@ body > main {
 }
 main {
   padding-bottom: 2rem;
-  min-height:90vh;
+  min-height: 90vh;
 }
-
 
 .matched-radius {
   background: white;
   padding: 10px !important;
   border-radius: 25px;
 }
-
 
 .matched-radius__inner {
   border-radius: 15px;
@@ -190,6 +188,25 @@ h1 > span:hover {
   height: 94px;
   line-height: 94px;
 }
+.img-fluid {
+  max-width: auto;
+  max-height:500px;
+}
+
+.thumb-wrapper{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thumb-wrapper > a{
+  margin:12px;
+}
+.text-center{
+  text-align: center !important;
+}
+
 #about > div > div > div.social-icon-wrapper > div:nth-child(1) > article {
   animation: fading 0.2s ease-in;
 }
@@ -266,7 +283,8 @@ h1 > span:hover {
   animation: fading 1.2s ease-in;
 }
 
-td, th{
+td,
+th {
   border-bottom: none !important;
 }
 
@@ -325,8 +343,17 @@ h1 {
   padding: 10px;
 }
 
-#more-posts > div > article > div > div > table > tbody > tr > td:nth-child(2) > a:hover{
-color:var(--highlight) !important;
+#more-posts
+  > div
+  > article
+  > div
+  > div
+  > table
+  > tbody
+  > tr
+  > td:nth-child(2)
+  > a:hover {
+  color: var(--highlight) !important;
 }
 
 /*Adjust padding on smaller screens */
@@ -403,14 +430,30 @@ color:var(--highlight) !important;
     margin-top: 0 !important;
     margin-bottom: 34px;
   }
-  table{
-    max-width:100% !important;
+  table {
+    max-width: 100% !important;
     overflow: hidden !important;
     font-size: 1rem;
-    margin-bottom:0;
+    margin-bottom: 0;
   }
-  #more-posts > div > article > div > div > table > thead > tr > th:nth-child(3),
-  #more-posts > div > article > div > div > table > tbody > tr > td:nth-child(3){
+  #more-posts
+    > div
+    > article
+    > div
+    > div
+    > table
+    > thead
+    > tr
+    > th:nth-child(3),
+  #more-posts
+    > div
+    > article
+    > div
+    > div
+    > table
+    > tbody
+    > tr
+    > td:nth-child(3) {
     display: none;
   }
 }
